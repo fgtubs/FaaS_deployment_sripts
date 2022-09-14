@@ -23,3 +23,32 @@ sudo service docker start
 
 sudo groupadd docker
 sudo gpasswd -a $USER docker
+
+DOCKERCHECK=$(docker run hello-world | grep 'Hello from Docker!')
+
+if [ '$DOCKERCHECK'=='Hello from Docker!']
+then
+    echo "ok"
+else
+    echo "something went wrong, start again from clean ubuntu"
+    exit
+fi
+
+
+
+# Install k3s with docker as a container runtime engine
+
+curl -sfL https://get.k3s.io | sh -s - --docker
+sudo chown ubuntu:ubuntu /etc/rancher/k3s/k3s.yaml
+sudo apt install linux-modules-extra-raspi
+
+
+
+# Install openfaas with arkade
+
+    # Install arkade
+curl -sLS https://get.arkade.dev | sudo sh
+    # Install openfaas
+arkade install openfaas
+
+sudo reboot
