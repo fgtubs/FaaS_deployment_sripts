@@ -23,7 +23,7 @@ sudo service docker start
 sudo groupadd docker
 sudo gpasswd -a $USER docker
 
-DOCKERCHECK=$(docker run hello-world | grep 'Hello from Docker!')
+DOCKERCHECK=$(sudo docker run hello-world | grep 'Hello from Docker!')
 
 if [ '$DOCKERCHECK'=='Hello from Docker!']
 then
@@ -32,3 +32,4 @@ else
     echo "something went wrong, start again from clean ubuntu"
     exit
 fi
+sudo reboot
