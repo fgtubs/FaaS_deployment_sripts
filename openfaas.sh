@@ -7,6 +7,9 @@ curl -sSLf https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
 # Create namespaces
 kubectl apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/namespaces.yml
 
+# Make service accessible
+export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+
 # Add openfaas helm chart
 helm repo add openfaas https://openfaas.github.io/faas-netes/
 
