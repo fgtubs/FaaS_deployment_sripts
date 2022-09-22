@@ -6,7 +6,13 @@ For this purpose the installation is done on a Raspberry Pi 4 with Ubuntu server
 ## Installation builds
 * Docker, K3s, openfaas
 * containerd, K3s, openfaas
-** tbd
+* tbd 
 
 ## Successfully deploy 
 * Docker, K3s, openfaas
+  '''
+  ./docker.sh
+  ./k3s_dockerbase.sh
+  ./openfaas.sh
+  '''
+  
