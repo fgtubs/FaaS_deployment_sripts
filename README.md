@@ -1,11 +1,12 @@
 # FaaS_deployment_sripts
 
 The aim of this project is to work on different deployment techinques for faas systems on constrained devices.
-For this purpose the installation is done on a Raspberry Pi 4 with Ubuntu server OS
+For this purpose the installation is done on a Raspberry Pi 4 with Ubuntu Server OS
 
 ## Installation builds
 * Docker, K3s, openfaas
 * containerd, K3s, openfaas
+* faasd?
 * tbd 
 
 ## Successfully deploy 
@@ -16,4 +17,3 @@ For this purpose the installation is done on a Raspberry Pi 4 with Ubuntu server
   ./k3s_dockerbase.sh
   ./openfaas.sh
 ```
-  
