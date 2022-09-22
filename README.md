@@ -10,6 +10,7 @@ For this purpose the installation is done on a Raspberry Pi 4 with Ubuntu server
 
 ## Successfully deploy 
 * Docker, K3s, openfaas
+* * use this: 
   '''
   ./docker.sh
   ./k3s_dockerbase.sh
