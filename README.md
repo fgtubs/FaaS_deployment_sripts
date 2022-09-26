@@ -17,3 +17,14 @@ For this purpose the installation is done on a Raspberry Pi 4 with Ubuntu Server
   ./k3s_dockerbase.sh
   ./openfaas.sh
 ```
+
+
+## For testing and verifying
+A simple hello world function is just to verify the build
+The function is from this project:
+  https://github.com/fcarp10/openfaas-functions#1-hello-world
+When the function is called it will return a simple 
+Also a web client is accessable:
+* IP_RASPI:30080
+* user: admin
+* password: generated in the installation process
