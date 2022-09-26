@@ -17,6 +17,9 @@ For this purpose the installation is done on a Raspberry Pi 4 with Ubuntu Server
   ./k3s_dockerbase.sh
   ./openfaas.sh
 ```
+### Troubleshooting
+If openfaas is not accessible, because the connection get refused use a specific gateway-flag
+--gateway 127.0.0.1:30080
 
 
 ## For testing and verifying
