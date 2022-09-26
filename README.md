@@ -20,10 +20,9 @@ For this purpose the installation is done on a Raspberry Pi 4 with Ubuntu Server
 
 
 ## For testing and verifying
-A simple hello world function is just to verify the build
-The function is from this project:
-  https://github.com/fcarp10/openfaas-functions#1-hello-world
-When the function is called it will return a simple 
+A simple hello world function is just to verify the build.
+The function is from this project: https://github.com/fcarp10/openfaas-functions#1-hello-world
+When the function is called it will return: <h1>Hello, World!</h1>
 Also a web client is accessable:
 * IP_RASPI:30080
 * user: admin
