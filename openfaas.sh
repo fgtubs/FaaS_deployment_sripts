@@ -29,5 +29,6 @@ curl -sSL https://cli.openfaas.com | sudo -E sh
 
 export OPENFAAS_URL=http://127.0.0.1:30080
 
+sleep 3
 # Login with the CLI and check connectivity
 echo -n $PASSWORD | faas-cli login -g $OPENFAAS_URL -u admin --password-stdin
