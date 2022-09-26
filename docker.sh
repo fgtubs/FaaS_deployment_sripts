@@ -1,6 +1,6 @@
 sudo DEBIAN_FRONTEND=noninteractive apt-get update
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y upgrade
-sudo systemctl restart dbus.service irqbalance.service ModemManager.service multipathd.service networkd-dispatcher.service polkit.service packagekit.service polkit.service ssh.service systemd-logind.service thermald.service udisks2.service unattended-upgrades.service user@1000.service rsyslog.service
+sudo systemctl restart dbus.service irqbalance.service ModemManager.service multipathd.service networkd-dispatcher.service polkit.service packagekit.service polkit.service ssh.service systemd-logind.service thermald.service udisks2.service unattended-upgrades.service user@1000.service rsyslog.service cron.service systemd-journald.service systemd-manager systemd-networkd.service systemd-resolved.service systemd-timesyncd.service systemd-udevd.service user@1000.service
 
 
 # install docker
@@ -25,13 +25,5 @@ sudo service docker start
 sudo groupadd docker
 sudo gpasswd -a $USER docker
 
-DOCKERCHECK=$(sudo docker run hello-world | grep 'Hello from Docker!')
-
-if [ '$DOCKERCHECK'=='Hello from Docker!']
-then
-    echo "ok"
-else
-    echo "something went wrong, start again from clean ubuntu"
-    exit
-fi
+# reboot, so that the permission changes are activated
 sudo reboot
