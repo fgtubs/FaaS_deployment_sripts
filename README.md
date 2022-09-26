@@ -39,4 +39,4 @@ When the function is called it will return:
 Also a web client is accessable:
 * IP_RASPI:30080
 * user: admin
-* password: generated in the installation process
+* password: generated in the installation process by ./openfaas.sh
