@@ -1,5 +1,7 @@
-sudo apt-get update
-sudo apt-get -y upgrade
+sudo DEBIAN_FRONTEND=noninteractive apt-get update
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y upgrade
+sudo systemctl restart dbus.service irqbalance.service ModemManager.service multipathd.service networkd-dispatcher.service polkit.service packagekit.service polkit.service ssh.service systemd-logind.service thermald.service udisks2.service unattended-upgrades.service user@1000.service rsyslog.service
+
 
 # install docker
 sudo apt-get -y install \
