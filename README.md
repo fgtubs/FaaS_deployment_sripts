@@ -6,8 +6,9 @@ For this purpose the installation is done on a Raspberry Pi 4 with Ubuntu Server
 ## Installation builds
 * Docker, K3s, openfaas
 * containerd, K3s, openfaas
-* faasd?
-* tbd 
+* faasd
+* openwhisk
+* kubeless
 
 ## Successfully deploy 
 * Docker, K3s, openfaas
