@@ -17,6 +17,10 @@ invoker:
   options: "-Dwhisk.kubernetes.user-pod-node-affinity.enabled=false"
 EOF
 
+helm repo add openwhisk https://openwhisk.apache.org/charts
+helm repo update
+helm install owdev openwhisk/openwhisk -n openwhisk --create-namespace -f mycluster.yaml
+
 
 # get wsk, cli
 wget https://github.com/apache/openwhisk-cli/releases/download/1.2.0/OpenWhisk_CLI-1.2.0-linux-arm64.tgz
