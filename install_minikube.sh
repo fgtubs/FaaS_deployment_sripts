@@ -14,4 +14,6 @@ sudo install minikube-linux-arm64 /usr/local/bin/minikube
 # make it easier to access
 alias kubectl="minikube kubectl --"
 
+sudo reboot
+
 # run: minikube start --driver=kvm2
