@@ -1,6 +1,7 @@
 # insatll kvm/libvirt as a hypervisor
 
 sudo apt update
+sudo apt install -y linux-modules-extra-raspi
 sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
 sudo adduser $USER kvm
 
