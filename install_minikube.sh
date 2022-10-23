@@ -10,3 +10,8 @@ sudo adduser $USER kvm
 # install minikube
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-arm64
 sudo install minikube-linux-arm64 /usr/local/bin/minikube
+
+# make it easier to access
+alias kubectl="minikube kubectl --"
+
+# run: minikube start --driver=kvm2
