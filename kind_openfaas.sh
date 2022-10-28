@@ -33,6 +33,7 @@ containerdConfigPatches:
 - |-
   [plugins."io.containerd.grpc.v1.cri".registry.mirrors."localhost:${reg_port}"]
     endpoint = ["http://${reg_name}:${reg_port}"]
+EOF
 
 # connect the registry to the cluster network
 docker network connect "kind" "${reg_name}"
