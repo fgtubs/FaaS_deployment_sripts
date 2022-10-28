@@ -50,7 +50,6 @@ chmod +x kind-with-registry.sh
 kubectl config current-context
 kubectl config use kind-kind
 kubectl cluster-info
-docker logs -f kind-registry
 arkade install openfaas
 kubectl rollout status -n openfaas deploy/gateway
 kubectl port-forward -n openfaas svc/gateway 8080:8080 &
