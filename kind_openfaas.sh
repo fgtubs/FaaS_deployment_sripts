@@ -11,7 +11,7 @@ curl -sLS https://get.arkade.dev | sudo sh
 arkade get kubectl
 sudo mv /home/ubuntu/.arkade/bin/kubectl /usr/local/bin/
 
-cat << EOF > kind-with-registry.sh
+cat << EOFF > kind-with-registry.sh
 #!/bin/sh
 set -o errexit
 
@@ -42,7 +42,7 @@ docker network connect "kind" "${reg_name}"
 for node in $(kind get nodes); do
   kubectl annotate node "${node}" "kind.x-k8s.io/registry=localhost:${reg_port}";
 done
-EOF
+EOFF
 
 chmod +x kind-with-registry.sh
 ./kind-with-registry.sh
