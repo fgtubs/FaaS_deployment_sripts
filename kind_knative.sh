@@ -10,7 +10,7 @@ chmod +x kn
 sudo mv kn /usr/local/bin
 
 wget https://github.com/knative-sandbox/kn-plugin-quickstart/releases/download/knative-v1.8.1/kn-quickstart-linux-arm64
-mv kn-quickstart-amr64 kn-quickstart
+mv kn-quickstart-arm64 kn-quickstart
 chmod +x kn-quickstart
 sudo mv kn-quickstart /usr/local/bin
 
