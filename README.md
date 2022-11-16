@@ -81,7 +81,7 @@ If openfaas is not accessible, because the connection get refused use a specific
 --gateway 127.0.0.1:30080
 
 
-## For testing and verifying
+## For OpenFaaS: testing and verifying
 A simple hello world function is just to verify the build.
 The function is from this project: https://github.com/fcarp10/openfaas-functions#1-hello-world
 When the function is called it will return: 
