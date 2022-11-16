@@ -3,14 +3,38 @@
 The aim of this project is to work on different deployment techinques for faas systems on constrained devices.
 For this purpose the installation is done on a Raspberry Pi 4 with Ubuntu Server OS
 
-## Installation builds
-* Docker, K3s, openfaas
-* containerd, K3s, openfaas
-* faasd
-* openwhisk
-* kubeless
+## Installation for underlying applications tested
+* Docker
+* Containerd
+* Kubernetes
+* K3s
+* K0s
+* Minikube
+* Kind
 
-## Successfully deploy 
+## Successfully deployed
+* Docker
+* Containerd
+* K3s
+* K0s
+* Minikube
+* Kind
+
+## Installation for serverless tested
+* OpenFaas
+* faasd
+* OpenWhisk
+* kubeless
+* Fn Project
+* OpenShift
+* knative
+* iron functions
+* fission
+* OpenLambda
+
+
+
+## Successfully deployed
 * Docker, K3s, openfaas
   * by following: 
 ```
@@ -30,7 +54,20 @@ For this purpose the installation is done on a Raspberry Pi 4 with Ubuntu Server
   ./faasd-installer.sh
 ```
 
-### Troubleshooting
+* knative quickstart with kind
+```
+  ./docker.sh
+  ./kind_knative.sh
+```
+
+
+* knative quickstart with minikube
+```
+  ./docker.sh
+  ./minikube_knative.sh
+```
+
+### Troubleshooting for OpenFaaS
 If openfaas is not accessible, because the connection get refused use a specific gateway-flag
 --gateway 127.0.0.1:30080
 
