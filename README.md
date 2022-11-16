@@ -67,6 +67,15 @@ For this purpose the installation is done on a Raspberry Pi 4 with Ubuntu Server
   ./minikube_knative.sh
 ```
 
+* faasd
+```
+  ./k3s_dockerbase.sh
+  ./fission_installer.sh
+```
+
+
+
+
 ### Troubleshooting for OpenFaaS
 If openfaas is not accessible, because the connection get refused use a specific gateway-flag
 --gateway 127.0.0.1:30080
