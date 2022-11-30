@@ -67,7 +67,7 @@ For this purpose the installation is done on a Raspberry Pi 4 with Ubuntu Server
   ./minikube_knative.sh
 ```
 
-* faasd
+* fission
 ```
   ./k3s_dockerbase.sh
   ./fission_installer.sh
