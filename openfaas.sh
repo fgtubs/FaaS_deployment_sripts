@@ -13,11 +13,18 @@ export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
 # Add openfaas helm chart
 helm repo add openfaas https://openfaas.github.io/faas-netes/
 
+export TIMEOUT=5m
 helm repo update \
  && helm upgrade openfaas --install openfaas/openfaas \
     --namespace openfaas  \
     --set functionNamespace=openfaas-fn \
     --set generateBasicAuth=true \
+    --set gateway.upstreamTimeout=$TIMEOUT \
+    --set gateway.writeTimeout=$TIMEOUT \
+    --set gateway.readTimeout=$TIMEOUT \
+    --set faasnetes.writeTimeout=$TIMEOUT \
+    --set faasnetes.readTimeout=$TIMEOUT \
+    --set queueWorker.ackWait=$TIMEOUT \
     --set gateway.nodePort=30080
     
 # Receive credantials
